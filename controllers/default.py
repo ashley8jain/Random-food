@@ -58,5 +58,16 @@ def call():
     return service()
 
 def meal():
-    redirect(URL('meal'));
-    return locals();
+    return dict()
+
+def register():
+    name = str(request.vars["name"]).strip()
+    mobile = str(request.vars["mobile"]).strip()
+    address = str(request.vars["address"]).strip()
+    password = str(request.vars["password"]).strip()
+    row = db.users(username=username)
+    if not row:
+        db.users.insert(name=name,mobile=mobile,address=address,password=password)
+    else:
+        return dict(success=False,message="Username exists")
+    return dict(success=True,message="Registered")

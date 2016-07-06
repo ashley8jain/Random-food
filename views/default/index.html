@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <title>RandomFood</title>
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -9,82 +10,256 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
-
+    <style>
+    ul li{
+      list-style-type: disc;
+    }
+    </style>
+    <script type="text/javascript">
+    function reg(){
+      console.log("cfrde");
+            $.ajax({
+                url:"/randomfood/default/register.json?name="+$('#name').val()+"&mobile="+$('#mobile').val()+"&address="+$('#address').val()+"&password="+$('#password').val(),
+                success:function(data){
+                    alert("registered");
+                },
+                error:function(){
+                    alert("try again");
+                }
+    })
+  }
+    </script>
     <body>
       <!--Import jQuery before materialize.js-->
       <header>
-      <div class="navbar-fixed">
-      <nav class="purple darken-1">
-        <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo flow-text" style="margin-left:10px">RandomFood</a>
-     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-     <ul class="right hide-on-med-and-down">
-       <li><a href ="index.html">Careers</a></li>
-       <li><a href="portfolio.html">About us</a></li>
-       <li><a href="contact.html">Contact</a></li>
-     </ul>
-     <ul class="side-nav deep-orange accent-3" id="mobile-demo">
-       <li><a href ="index.html">Careers</a></li>
-       <li><a href="portfolio.html">About us</a></li>
-       <li><a href="contact.html">Contact</a></li>
-     </ul>
-   </div>
-     </nav>
-   </header>
+
+        </header>
    <main>
+     <div id="login" class="modal">
+      <div class="modal-content">
+        <h4 style="margin:30px">Login</h4>
+        <div class="input-field">
+          <i class="material-icons prefix">phone</i>
+          <input name="username" type="text" class="validate" maxlength="10">
+          <label for="username">Mobile</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">vpn_key</i>
+          <input name="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" style="margin:30px;">Login
+            <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </div>
+    <div id="signup" class="modal">
+     <div class="modal-content">
+       <h4 style="margin:30px">Signup</h4>
+       <div class="input-field">
+         <i class="material-icons prefix">phone</i>
+         <input name="name" id="name" type="text" class="validate" maxlength="10">
+         <label for="name">Name</label>
+       </div>
+       <div class="input-field">
+         <i class="material-icons prefix">phone</i>
+         <input name="mobile" id="mobile" type="text" class="validate" maxlength="10">
+         <label for="mobile">Mobile</label>
+       </div>
+       <div class="input-field">
+         <i class="material-icons prefix">location_on</i>
+         <input name="address" id="address" type="text" class="validate">
+         <label for="address">Address</label>
+       </div>
+
+       <div class="input-field">
+         <i class="material-icons prefix">vpn_key</i>
+         <input name="password" id="password" type="password" class="validate">
+         <label for="password">Password</label>
+       </div>
+       <div class="input-field">
+         <i class="material-icons prefix">vpn_key</i>
+         <input name="cpassword" type="password" class="validate">
+         <label for="cpassword">Confirm Password</label>
+       </div>
+       <button class="btn waves-effect waves-light" style="margin:30px;" onclick="reg();">Sign up
+           <i class="material-icons right">send</i>
+       </button>
+     </div>
+   </div>
      <div class="parallax-container">
+       <div class="navbar-fixed">
+       <nav class="navcolor">
+         <div class="nav-wrapper">
+           <a href="index.html" class="brand-logo flow-text namecolor" style="margin-left:10px">RandomFood</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href ="index.html">Careers</a></li>
+        <li><a href="portfolio.html">About us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="modal-trigger waves-effect waves-light btcolor btn" href="#login">Login</a></li>
+        <li><a class="modal-trigger waves-effect waves-light btcolor btn" href="#signup">Signup</a></li>
+      </ul>
+      <ul id="nav-mobile" class="side-nav deep-orange accent-3" id="mobile-demo">
+        <li><a href ="index.html">Careers</a></li>
+        <li><a href="portfolio.html">About us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="waves-effect waves-light modal-trigger" href="#login">Login</a></li>
+      </ul>
+    </div>
+      </nav>
+    </div>
        <div class="section no-pad-bot">
          <div class="container">
-           <div class="row center">
+           <div class="row center" id="startchange">
              <h1 style="color:white;opacity:0.8;"> Welcome to RandomFood... </h1>
              <p style="color:white;opacity:0.8;font-size:20px;"> Find Best Recipes and meal......</p>
-             <a href="meal.html" class="waves-effect waves-light btn red z-depth-3" style="margin-top:30px">View Meal</a>
+             <div class="row customrow">
+               <div class="custom input-field col l5 m6 s12">
+                 <select>
+                   <option value="" disabled selected>Choose state</option>
+                   <option value="1">Delhi</option>
+                   <option value="2">Gujarat</option>
+                   <option value="3">Madhya pradesh</option>
+                 </select>
+               </div>
+               <div class="custom input-field col l5 m6 s12">
+                 <select>
+                   <option value="" disabled selected>Choose City</option>
+                   <option value="1">Delhi</option>
+                   <option value="2">New Delhi</option>
+                 </select>
+               </div>
+               <div class="col l2 m12 s12">
+                 <a href="meal.html" class="waves-effect waves-light btn red z-depth-3" style="margin-top:19px">View Meal</a>
+               </div>
+             </div>
            </div>
          </div>
        </div>
 
       <div class="parallax"><img src="../static/images/food.jpg"></div>
     </div>
-    <div class="section white">
-    <div class="row container">
-      <h1 class="center">Welcome to Randomfood.in</h1>
-      <p class="center">
-        We are showing you special food which probably you have not tasted ever.....
-      </p>
-      <h1 class="center">Welcome to Randomfood.in</h1>
-      <p class="center">
-        We are showing you special food which probably you have not tasted ever.....
-      </p>
-      <h1 class="center">Welcome to Randomfood.in</h1>
-      <p class="center">
-        We are showing you special food which probably you have not tasted ever.....
+
+  <div class="section no-pad-bot" id="padsec">
+    <div class="container aqw" style="padding:20px">
+      <div class = "center">
+        <font color="red" size="6px">RandomFood </font>
+      </div>
+      <p style="font-size:20px" class="center">It brings you the food from different cities of different states from all over India at your doorstep.
       </p>
     </div>
+  </div>
+  <div class="row" style="background-color:#D4D1C5" id="newrow">
+      <div class="col s12 l6 m6" id="nopad" >
+	       <img class="responsive-img" src ="../static/images/food1.jpg" id="fullimg" >
+	  </div>
+	  <div class="col s12 l6 m6 center" style="padding:100px" >
+	     <p class="center flow-text" style="font-size:40px;border:1px solid red;">Burger</p>
+	     <div class="container">
+        <ul >
+          <li><b>Dance Rep.</b> for session 2015-16</li>
+          <li>Core and Important member fo Music and Dance club</li>
+          <li>Plays <b>Keyboard</b></li>
+          <li>Inter IIT in Aqatics</li>
+        </ul>
+	    </div>
+	  </div>
+  </div>
+  <div class="row" style="background-color:#F2BDA5"  id="newrow">
+    <div class="col s12 l6 m6 center" style="padding:100px">
+	     <h5 class="center">RECEIPE</h5>
+	      <div class="container">
+	      </div>
+	  </div>
+	  <div class="col s12 l6 m6" id="nopad">
+	  <img class="responsive-img" src ="../static/images/food2.jpg" id="fullimg" >
+	  </div>
+    </div>
+    <div class="row" style="background-color:#D4D1C5" id="newrow">
+        <div class="col s12 l6 m6" id="nopad" >
+  	       <img class="responsive-img" src ="../static/images/food1.jpg" id="fullimg" >
+  	  </div>
+  	  <div class="col s12 l6 m6 center" style="padding:100px" >
+  	     <p class="center flow-text" style="font-size:40px;border:1px solid red;">Burger</p>
+  	     <div class="container">
+          <ul >
+            <li><b>Dance Rep.</b> for session 2015-16</li>
+            <li>Core and Important member fo Music and Dance club</li>
+            <li>Plays <b>Keyboard</b></li>
+            <li>Inter IIT in Aqatics</li>
+          </ul>
+  	    </div>
+  	  </div>
+    </div>
+    <div class="row" style="background-color:#F2BDA5"  id="newrow">
+      <div class="col s12 l6 m6 center" style="padding:100px">
+  	     <h5 class="center">RECEIPE</h5>
+  	      <div class="container">
+  	      </div>
+  	  </div>
+  	  <div class="col s12 l6 m6" id="nopad">
+  	  <img class="responsive-img" src ="../static/images/food2.jpg" id="fullimg" >
+  	  </div>
+      </div>
   </div>
   <div class="parallax-container">
     <div class="parallax"><img src="../static/images/food2.png"></div>
   </div>
-  <div class="section white">
-  <div class="row container">
-    <h1 class="center">Welcome to Randomfood.in</h1>
-    <p class="center">
-      We are showing you special food which probably you have not tasted ever.....
-    </p>
-    <h1 class="center">Welcome to Randomfood.in</h1>
-    <p class="center">
-      We are showing you special food which probably you have not tasted ever.....
-    </p>
-    <h1 class="center">Welcome to Randomfood.in</h1>
-    <p class="center">
-      We are showing you special food which probably you have not tasted ever.....
-    </p>
+  <div class="section container">
+    <div class="row">
+     <div class="col s12 l6">
+       <div class="card-panel red">
+         <div class="white-text">
+           <p class="flow-text center" style="font-size:25px">
+            GET IN TOUCH
+           </p>
+           <p style="font-size:20px">
+             Contact
+           </p>
+           <div id="div1"></div>
+           <div style="padding:10px">
+             <i class="material-icons small">phone</i>
+           </div>
+       </div>
+       </div>
+     </div>
+     <div class="col s12 l6">
+       <div class="card-panel red darken-4">
+         <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+         I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+         </span>
+       </div>
+     </div>
+   </div>
   </div>
-</div>
-
-
    </main>
+   <footer class="page-footer purple darken-1 scrollspy" id="contact">
+     <div class="footer-copyright">
+       <div class="container center"> &copy; 2016 randomfood
+       </div>
+     </div>
+   </footer>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="../static/js/materialize.min.js"></script>
       <script type="text/javascript" src="../static/js/main.js"></script>
+      <script type="text/javascript">
+
+     var scroll_start = 0;
+     var startchange = $('#startchange');
+     var offset = startchange.offset();
+      if (startchange.length){
+     $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $(".navcolor").css('background-color', 'rgba(74,20,140,.8)');
+        $(".namecolor").css('color', '#bbdefb');
+         } else {
+            $('.navcolor').css('background-color', 'transparent');
+        $(".namecolor").css('color', '#fff');
+         }
+     });
+      }
+      </script>
     </body>
   </html>
