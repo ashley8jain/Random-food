@@ -14,7 +14,7 @@
     ul li{
       list-style-type: disc;
     }
-	
+
 	@font-face {
 			font-family: 'Material Icons';
 			font-style: normal;
@@ -41,7 +41,7 @@
     <body>
       <!--Import jQuery before materialize.js-->
       <header>
- 
+
      <nav class="navcolor cnav">
        <div class="nav-wrapper">
          <a href="index.html" class="brand-logo flow-text namecolor" style="margin-left:10px">RandomFood</a>
@@ -61,54 +61,54 @@
     </ul>
   </div>
     </nav>
-  
+
         </header>
    <main>
-   
-    
+
+
    <div class="parallax-container pacon center">
-   
+
    <div class="section no-pad-bot">
          <div class="container">
            <div class="row center" id="startchange">
              <h1 style="color:white;opacity:0.8;">Delhi</h1>
-            
+
              <p style="color:white;">"Ye seher nahi Mehfil hai"</p>
            </div>
          </div>
-		 
+
        </div>
 	<div class="section center" style="background-color:rgba(225,225,225,.6);margin-top:83px;padding:2px;">
 			<a class="waves-effect waves-light btn btcolor1"><i class="material-icons left">location_on</i>CHANGE CITY</a>
 	</div>
    <div class="parallax"><img src="static/images/delhi.png"></div>
-   
+
    </div>
-  
+
 
   <div class="section no-pad-bot" style="background-color:#EDEDED;">
- 
-  
+
+
   <div class ="row">
   <div class="col s2 m2 l2 center" id ="header">
-  
-                   <div class="input-field" ">
+
+                   <div class="input-field">
                  <select>
                    <option value="" disabled selected>Taste</option>
                    <option value="1">Tikha</option>
                    <option value="2">Mitha</option>
                    <option value="3">Khata</option>
-				   
+
                  </select>
                </div>
-			   
+
 			   <div class="input-field">
                  <select>
                    <option value="" disabled selected>Veg/Non-Veg</option>
                    <option value="1">Veg</option>
                    <option value="2">Non-Veg</option>
-                   
-				   
+
+
                  </select>
                </div>
 			   <div class="input-field">
@@ -131,12 +131,12 @@
   <li>Ahemdabad</li>
   <li>Bhopal</li>
   </ul>
-  
-  
-  
+
+
+
   </div>
   <div class="col s10 m10 l10">
-  
+
 <div class ="card">
 
   <div class="row">
@@ -144,12 +144,16 @@
 
  <h3 class="center" style="color:#000000">Popular Cuisines</h3>
 
- 
- 
+
+
  <div class="col l4 m6 s12">
-    <div class="card grey lighten-5 z-depth-1" id="radcor">
+    <div class="card grey lighten-5 z-depth-1 hoverable" id="radcor">
             <div class="card-image"  id="radcor" style="padding:5px;" >
-              <img src="static/images/random1.jpg" >
+              <div class="show-image">
+                <img id="mealimg" src="static/images/random1.jpg" >
+                <input class="update" type="button" value="Update" />
+                <input class="delete" type="button" value="Delete" />
+              </div>
               <span class="card-title">1</span>
             </div>
             <div class="card-content">
@@ -161,14 +165,16 @@
 			 <a href="#">This is a link</a>
             </div>
           </div>
-   
-   
-      
-    
-    
-      <div class="card grey lighten-5 z-depth-1" id="radcor">
+
+
+
+
+
+      <div class="card grey lighten-5 z-depth-1 hoverable" id="radcor">
             <div class="card-image"  id="radcor" style="padding:5px;" >
-              <img src="static/images/random2.jpg" >
+              <div class="cardimg">
+                <img id="mealimg" src="static/images/random2.jpg" >
+              </div>
               <span class="card-title">2</span>
             </div>
             <div class="card-content">
@@ -180,11 +186,13 @@
 			  <a href="#">This is a link</a>
             </div>
           </div>
-    
-	
-       <div class="card grey lighten-5 z-depth-1" id="radcor">
+
+
+       <div class="card grey lighten-5 z-depth-1 hoverable" id="radcor">
             <div class="card-image"  id="radcor" style="padding:5px;" >
-              <img src="static/images/random3.jpg" >
+              <div class="cardimg">
+                <img id="mealimg" src="static/images/random3.jpg" >
+              </div>
               <span class="card-title">1</span>
             </div>
             <div class="card-content">
@@ -192,24 +200,24 @@
               I am convenient because I require little markup to use effectively.</p>
             </div>
             <div class="card-action"  id="radcor">
-				<div class="rating6"></div>             
+				<div class="rating6"></div>
 			 <a href="#">This is a link</a>
             </div>
           </div>
 	  </div>
-	  
-	  <div class="col l4 m6 s12">
-    
-  
 
-    
-      
-	  
-    
-   
-      <div class="card grey lighten-5 z-depth-1" id="radcor">
+	  <div class="col l4 m6 s12">
+
+
+
+
+
+
+
+
+      <div class="card grey lighten-5 z-depth-1 hoverable" id="radcor">
             <div class="card-image"  id="radcor" style="padding:5px;" >
-              <img src="static/images/random5.jpg" >
+              <img id="mealimg" src="static/images/random5.jpg" >
               <span class="card-title">4</span>
             </div>
             <div class="card-content">
@@ -221,10 +229,10 @@
 			  <a href="#">This is a link</a>
             </div>
           </div>
-	  
-	   <div class="card grey lighten-5 z-depth-1" id="radcor">
+
+	   <div class="card grey lighten-5 z-depth-1 hoverable" id="radcor">
             <div class="card-image"  id="radcor" style="padding:5px;" >
-              <img src="static/images/random4.jpg" >
+              <img id="mealimg" src="static/images/random4.jpg" >
               <span class="card-title">5</span>
             </div>
             <div class="card-content">
@@ -236,10 +244,10 @@
 			  <a href="#">This is a link</a>
             </div>
           </div>
-   
-     <div class="card grey lighten-5 z-depth-1" id="radcor">
+
+     <div class="card grey lighten-5 z-depth-1 hoverable" id="radcor">
             <div class="card-image"  id="radcor" style="padding:5px;" >
-              <img src="static/images/random6.jpg" >
+              <img id="mealimg" src="static/images/random6.jpg" >
               <span class="card-title">6</span>
             </div>
             <div class="card-content">
@@ -251,17 +259,17 @@
 			  <a href="#">This is a link</a>
             </div>
           </div>
-    
-  </div>
-  
-   <div class="col l4 m6 s12">
-    
-  
 
-    
-      <div class="card grey lighten-5 z-depth-1" id="radcor">
+  </div>
+
+   <div class="col l4 m6 s12">
+
+
+
+
+      <div class="card grey lighten-5 z-depth-1 hoverable" id="radcor">
             <div class="card-image"  id="radcor" style="padding:5px;" >
-              <img src="static/images/random4.jpg" >
+              <img id="mealimg" src="static/images/random4.jpg" >
               <span class="card-title">7</span>
             </div>
             <div class="card-content">
@@ -273,12 +281,12 @@
 			  <a href="#">This is a link</a>
             </div>
           </div>
-	  
-    
-   
-      <div class="card grey lighten-5 z-depth-1" id="radcor">
+
+
+
+      <div class="card grey lighten-5 z-depth-1 hoverable" id="radcor">
             <div class="card-image"  id="radcor" style="padding:5px;" >
-              <img src="static/images/random5.jpg" >
+              <img id="mealimg" src="static/images/random5.jpg" >
               <span class="card-title">8</span>
             </div>
             <div class="card-content">
@@ -290,10 +298,10 @@
 			  <a href="#">This is a link</a>
             </div>
           </div>
-   
-     <div class="card grey lighten-5 z-depth-1" id="radcor">
+
+     <div class="card grey lighten-5 z-depth-1 hoverable" id="radcor">
             <div class="card-image"  id="radcor" style="padding:5px;" >
-              <img src="static/images/random6.jpg" >
+              <img id="mealimg" src="static/images/random6.jpg" >
               <span class="card-title">9</span>
             </div>
             <div class="card-content">
@@ -305,7 +313,7 @@
               <a href="#">This is a link</a>
             </div>
           </div>
-    
+
   </div>
   </div>
   </div>
@@ -315,7 +323,7 @@
 
 
  </main>
- 
+
  <footer class="page-footer purple darken-1 scrollspy" id="contact">
    <div class="center">
      <a href="https://www.facebook.com" target="_blank"><img src="static/images/facebook.png" alt="Facebook logo"></a>
@@ -338,9 +346,9 @@
         $('#header').bind('fixed.ScrollToFixed', function() { $(this).css('color', 'red'); });
         $('#header').bind('unfixed.ScrollToFixed', function() { $(this).css('color', ''); });
 
-       
 
-       
+
+
     });
 </script>
 <script>

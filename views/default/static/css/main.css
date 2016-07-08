@@ -1,15 +1,15 @@
 .parallax-container {
       height: 600px;
     }
-	
-	
+
+
 .pacon {
       height: 300px;
-    }	
+    }
 .custom{
   opacity:1;
   background-color: #fff;
-  
+
 }
 .navcolor{
 transition-duration: 1s;
@@ -146,6 +146,10 @@ padding-top:0;
   background-color: rgba(74,20,140,0.8);
 }
 
+.noncnav{
+  background-color: #8e24aa;
+}
+
 #div1{
   height: 1px;
   background: white;
@@ -154,8 +158,8 @@ padding-top:0;
 }
 
 #radcor{
-	
-	border-radius: 1em 
+
+	border-radius: 1em
 }
 
 
@@ -192,6 +196,36 @@ padding-top:0;
     color:#FFF;
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
+  main {
+    flex: 1 0 auto;
+  }
+  div.show-image:hover img{
+      opacity:0.5;
+  }
+  div.show-image:hover input {
+      display: block;
+  }
+  div.show-image input {
+      position:absolute;
+      display:none;
+  }
+  div.show-image input.update {
+      top:0;
+      left:0;
+  }
+  div.show-image input.delete {
+      top:0;
+      left:79%;
+  }
 
-
+.backimg{
+    background-image: url("http://springhappenings.com/wp-content/uploads/2014/09/crsrxfllostehmuxwzqfkdarpcg0di40toehyl4mzmgrkmy3dpfzxttukvsmluvp-o.jpg");
+    height: 400px;
+    background-position: bottom;
+}
