@@ -203,29 +203,45 @@ body {
   }
 
   main {
-    flex: 1 0 auto;
+      flex: 1 0 auto;
   }
   div.show-image:hover img{
       opacity:0.5;
   }
-  div.show-image:hover input {
+  div.show-image:hover a {
       display: block;
   }
-  div.show-image input {
+  div.show-image a {
       position:absolute;
       display:none;
   }
-  div.show-image input.update {
+  div.show-image .like {
       top:0;
-      left:0;
+      right:10px;
   }
-  div.show-image input.delete {
-      top:0;
-      left:79%;
+  div.show-image .share {
+      top:13px;
+      right:60px;
   }
 
 .backimg{
     background-image: url("http://springhappenings.com/wp-content/uploads/2014/09/crsrxfllostehmuxwzqfkdarpcg0di40toehyl4mzmgrkmy3dpfzxttukvsmluvp-o.jpg");
-    height: 400px;
+    height: 450px;
     background-position: bottom;
+}
+.like{
+  color:#666;
+  text-decoration:none;
+  font-size:40px;
+  transition:all 0.3s
+}
+.like:hover{
+  color:#755
+}
+.share:hover{
+  background-image: url("../images/share2.png");
+}
+a.active{
+  color:#d02 !important;
+  text-shadow:#faa 0 0 16px;
 }
