@@ -5,8 +5,8 @@
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="../static/css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="../static/css/main.css"/>
+      <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="static/css/main.css"/>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -14,14 +14,34 @@
     ul li{
       list-style-type: disc;
     }
+	
+	@font-face {
+			font-family: 'Material Icons';
+			font-style: normal;
+			font-weight: 400;
+			src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2'), url(https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5RV6cRhDpPC5P4GCEJpqGoc.woff) format('woff');
+		}
+		.material-icons {
+			font-family: 'Material Icons';
+			font-weight: normal;
+			font-style: normal;
+			font-size: 24px;
+			line-height: 1;
+			letter-spacing: normal;
+			text-transform: none;
+			display: inline-block;
+			word-wrap: normal;
+			-moz-font-feature-settings: 'liga';
+			-moz-osx-font-smoothing: grayscale;
+		}
+		i {
+			cursor :  pointer;
+		}
     </style>
     <body>
       <!--Import jQuery before materialize.js-->
       <header>
-
-        </header>
-   <main>
-     <div class="navbar-fixed">
+ 
      <nav class="navcolor cnav">
        <div class="nav-wrapper">
          <a href="index.html" class="brand-logo flow-text namecolor" style="margin-left:10px">RandomFood</a>
@@ -41,111 +61,264 @@
     </ul>
   </div>
     </nav>
-  </div>
+  
+        </header>
+   <main>
+   
+    
+   <div class="parallax-container pacon center">
+   
+   <div class="section no-pad-bot">
+         <div class="container">
+           <div class="row center" id="startchange">
+             <h1 style="color:white;opacity:0.8;">Delhi</h1>
+            
+             <p style="color:white;">"Ye seher nahi Mehfil hai"</p>
+           </div>
+         </div>
+		 
+       </div>
+	<div class="section center" style="background-color:rgba(225,225,225,.6);margin-top:83px;padding:2px;">
+			<a class="waves-effect waves-light btn btcolor1"><i class="material-icons left">location_on</i>CHANGE CITY</a>
+	</div>
+   <div class="parallax"><img src="static/images/delhi.png"></div>
+   
+   </div>
+  
 
-<div class="row container-fluid">
+  <div class="section no-pad-bot" style="background-color:#EDEDED;">
+ 
+  
+  <div class ="row">
+  <div class="col s2 m2 l2 center" id ="header">
+  
+                   <div class="input-field" ">
+                 <select>
+                   <option value="" disabled selected>Taste</option>
+                   <option value="1">Tikha</option>
+                   <option value="2">Mitha</option>
+                   <option value="3">Khata</option>
+				   
+                 </select>
+               </div>
+			   
+			   <div class="input-field">
+                 <select>
+                   <option value="" disabled selected>Veg/Non-Veg</option>
+                   <option value="1">Veg</option>
+                   <option value="2">Non-Veg</option>
+                   
+				   
+                 </select>
+               </div>
+			   <div class="input-field">
+                 <select>
+                   <option value="" disabled selected>Sort-By:</option>
+                   <option value="1">Popularity</option>
+                   <option value="2">Rating</option>
+                 </select>
+               </div>
+			   <br/>
+			   <hr>
+  <p>Popular Cities</p>
+  <ul class="left-align" style="list-style-type:disc;">
+  <li>Delhi</li>
+  <li>Kolkata</li>
+  <li>Mumbai</li>
+  <li>Hyderabad</li>
+  <li>Jammu</li>
+  <li>Manali</li>
+  <li>Ahemdabad</li>
+  <li>Bhopal</li>
+  </ul>
+  
+  
+  
+  </div>
+  <div class="col s10 m10 l10">
+  
+<div class ="card">
+
   <div class="row">
-    <h3 class="center" style="color:#fff">Random Dishes</h3>
-    <div class="col l4 m6 s12">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="../static/images/random1.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col l4 m6 s12">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="../static/images/random2.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col l4 m6 s12">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="../static/images/random3.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="row">
 
-    <div class="col l4 m6 s12">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="../static/images/random4.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col l4 m6 s12">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="../static/images/random5.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col l4 m6 s12">
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="../static/images/random6.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-    </div>
+
+ <h3 class="center" style="color:#000000">Popular Cuisines</h3>
+
+ 
+ 
+ <div class="col l4 m6 s12">
+    <div class="card grey lighten-5 z-depth-1" id="radcor">
+            <div class="card-image"  id="radcor" style="padding:5px;" >
+              <img src="static/images/random1.jpg" >
+              <span class="card-title">1</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action"  id="radcor">
+					<div class="rating8"></div>
+			 <a href="#">This is a link</a>
+            </div>
+          </div>
+   
+   
+      
+    
+    
+      <div class="card grey lighten-5 z-depth-1" id="radcor">
+            <div class="card-image"  id="radcor" style="padding:5px;" >
+              <img src="static/images/random2.jpg" >
+              <span class="card-title">2</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action"  id="radcor">
+              <div class="rating7"></div>
+			  <a href="#">This is a link</a>
+            </div>
+          </div>
+    
+	
+       <div class="card grey lighten-5 z-depth-1" id="radcor">
+            <div class="card-image"  id="radcor" style="padding:5px;" >
+              <img src="static/images/random3.jpg" >
+              <span class="card-title">1</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action"  id="radcor">
+				<div class="rating6"></div>             
+			 <a href="#">This is a link</a>
+            </div>
+          </div>
+	  </div>
+	  
+	  <div class="col l4 m6 s12">
+    
+  
+
+    
+      
+	  
+    
+   
+      <div class="card grey lighten-5 z-depth-1" id="radcor">
+            <div class="card-image"  id="radcor" style="padding:5px;" >
+              <img src="static/images/random5.jpg" >
+              <span class="card-title">4</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action"  id="radcor">
+              <div class="rating5"></div>
+			  <a href="#">This is a link</a>
+            </div>
+          </div>
+	  
+	   <div class="card grey lighten-5 z-depth-1" id="radcor">
+            <div class="card-image"  id="radcor" style="padding:5px;" >
+              <img src="static/images/random4.jpg" >
+              <span class="card-title">5</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action"  id="radcor">
+              <div class="rating4"></div>
+			  <a href="#">This is a link</a>
+            </div>
+          </div>
+   
+     <div class="card grey lighten-5 z-depth-1" id="radcor">
+            <div class="card-image"  id="radcor" style="padding:5px;" >
+              <img src="static/images/random6.jpg" >
+              <span class="card-title">6</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action"  id="radcor">
+              <div class="rating3"></div>
+			  <a href="#">This is a link</a>
+            </div>
+          </div>
+    
+  </div>
+  
+   <div class="col l4 m6 s12">
+    
+  
+
+    
+      <div class="card grey lighten-5 z-depth-1" id="radcor">
+            <div class="card-image"  id="radcor" style="padding:5px;" >
+              <img src="static/images/random4.jpg" >
+              <span class="card-title">7</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action"  id="radcor">
+              <div class="rating2"></div>
+			  <a href="#">This is a link</a>
+            </div>
+          </div>
+	  
+    
+   
+      <div class="card grey lighten-5 z-depth-1" id="radcor">
+            <div class="card-image"  id="radcor" style="padding:5px;" >
+              <img src="static/images/random5.jpg" >
+              <span class="card-title">8</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action"  id="radcor">
+              <div class="rating1"></div>
+			  <a href="#">This is a link</a>
+            </div>
+          </div>
+   
+     <div class="card grey lighten-5 z-depth-1" id="radcor">
+            <div class="card-image"  id="radcor" style="padding:5px;" >
+              <img src="static/images/random6.jpg" >
+              <span class="card-title">9</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action"  id="radcor">
+			<div class="rating"></div>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+    
+  </div>
+  </div>
+  </div>
   </div>
 </div>
+</div>
+
 
  </main>
+ 
  <footer class="page-footer purple darken-1 scrollspy" id="contact">
    <div class="center">
-     <a href="https://www.facebook.com" target="_blank"><img src="../static/images/facebook.png" alt="Facebook logo"></a>
+     <a href="https://www.facebook.com" target="_blank"><img src="static/images/facebook.png" alt="Facebook logo"></a>
    </div>
    <div class="footer-copyright">
      <div class="container center"> &copy; 2016 randomfood
@@ -153,8 +326,73 @@
    </div>
  </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="../static/js/materialize.min.js"></script>
-    <script type="text/javascript" src="../static/js/main.js"></script>
+    <script type="text/javascript" src="static/js/materialize.min.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+	<!--<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>-->
+	<script src="static/js/jquery.star.rating.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>-->
+	<script src="static/js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+	<script>
+    $(document).ready(function() {
+        $('#header').scrollToFixed();
+        $('#header').bind('fixed.ScrollToFixed', function() { $(this).css('color', 'red'); });
+        $('#header').bind('unfixed.ScrollToFixed', function() { $(this).css('color', ''); });
+
+       
+
+       
+    });
+</script>
+<script>
+	$(document).ready(function(){
+		$('.rating').addRating();
+	})
+</script>
+
+<script>
+	$(document).ready(function(){
+		$('.rating1').addRating();
+	})
+</script>
+
+<script>
+	$(document).ready(function(){
+		$('.rating2').addRating();
+	})
+</script>
+
+<script>
+	$(document).ready(function(){
+		$('.rating3').addRating();
+	})
+</script>
+
+<script>
+	$(document).ready(function(){
+		$('.rating4').addRating();
+	})
+</script>
+
+<script>
+	$(document).ready(function(){
+		$('.rating5').addRating();
+	})
+</script>
+<script>
+	$(document).ready(function(){
+		$('.rating6').addRating();
+	})
+</script>
+<script>
+	$(document).ready(function(){
+		$('.rating7').addRating();
+	})
+</script>
+<script>
+	$(document).ready(function(){
+		$('.rating8').addRating();
+	})
+</script>
 
   </body>
 </html>
