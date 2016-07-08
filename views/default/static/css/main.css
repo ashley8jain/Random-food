@@ -245,3 +245,10 @@ a.active{
   color:#d02 !important;
   text-shadow:#faa 0 0 16px;
 }
+.profback{
+  background-image: url("../images/profback.jpg");
+}
+.ccard{
+  border-radius:2px;
+  opacity: 0.8;
+}
