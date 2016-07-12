@@ -6,6 +6,11 @@
 .pacon {
       height: 300px;
     }
+	
+.about{
+  height: 400px;
+}
+
 .custom{
   opacity:1;
   background-color: #fff;
@@ -32,6 +37,16 @@ background-repeat:no-repeat;
 border-radius: 6px;
 font-size: 12px;
 color:red;
+
+}
+
+.btcolor2{
+background-color: #EFEFEF;
+border: 2px solid red;
+background-repeat:no-repeat;
+border-radius: 4px;
+font-size: 12px;
+color: #555555;
 
 }
 
@@ -85,6 +100,18 @@ padding-top:0;
 
 margin-bottom:0;
 margin-left:0;
+margin-right:0;
+margin-top:0;
+padding-bottom:0;
+padding-right:0;
+padding-left:0;
+padding-top:0;
+}
+#onepad {
+
+
+margin-bottom:3px;
+margin-left:;
 margin-right:0;
 margin-top:0;
 padding-bottom:0;
@@ -159,7 +186,7 @@ padding-top:0;
 
 #radcor{
 
-	border-radius: 1em
+	border-radius: .5em
 }
 
 
@@ -229,6 +256,19 @@ body {
     height: 450px;
     background-position: bottom;
 }
+
+
+.modalback{
+   background-image: url("../images/modal.png");
+	max-height: 90%;
+  width: 90%;
+  
+ 
+}
+
+
+
+
 .like{
   color:#666;
   text-decoration:none;
@@ -246,9 +286,16 @@ a.active{
   text-shadow:#faa 0 0 16px;
 }
 .profback{
-  background-image: url("../images/profback.jpg");
+  background-image: url("../images/baby1.jpg");
+  padding:0;
+  margin:0;
 }
 .ccard{
   border-radius:2px;
   opacity: 0.8;
+}
+
+.ultype li{
+	
+	list-style-type:disc;"
 }

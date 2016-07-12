@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-  <html>
+ <html>
     <head>
       <title>RandomFood</title>
       <!--Import Google Icon Font-->
@@ -87,7 +86,11 @@
        </button>
      </div>
    </div>
-     <div class="parallax-container">
+   
+   
+   
+   
+     <div class="parallax-container about" style="position:relative;">
        <div class="navbar-fixed">
        <nav class="navcolor">
          <div class="nav-wrapper">
@@ -96,141 +99,64 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href ="index.html">Careers</a></li>
         <li><a href="aboutus.php">About us</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="">Contact</a></li>
         <li><a class="modal-trigger waves-effect waves-light btcolor btn" href="#login">Login</a></li>
         <li><a class="modal-trigger waves-effect waves-light btcolor btn" href="#signup">Signup</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav deep-orange accent-3" id="mobile-demo">
         <li><a href ="index.html">Careers</a></li>
         <li><a href="aboutus.php">About us</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="">Contact</a></li>
         <li><a class="waves-effect waves-light modal-trigger" href="#login">Login</a></li>
       </ul>
     </div>
       </nav>
     </div>
-       <div class="section no-pad-bot">
-         <div class="container">
-           <div class="row center" id="startchange">
-             <h1 style="color:white;opacity:0.8;"> Welcome to RandomFood</h1>
-            
-             <div class="row customrow">
-               <div class="custom input-field col l5 m6 s12">
-                 <select>
-                   <option value="" disabled selected>Choose state</option>
-                   <option value="1">Delhi</option>
-                   <option value="2">Gujarat</option>
-                   <option value="3">Madhya pradesh</option>
-                 </select>
-               </div>
-               <div class="custom input-field col l5 m6 s12">
-                 <select>
-                   <option value="" disabled selected>Choose City</option>
-                   <option value="1">Delhi</option>
-                   <option value="2">New Delhi</option>
-                 </select>
-               </div>
-               <div class="col l2 m12 s12">
-                 <a href="meal.html" class="waves-effect waves-light btn red z-depth-3" style="margin-top:19px">View dishes</a>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
+	
+	<div class ="row white" style ="position:absolute;top:30%;opacity:.6" id="startchange">
+	
+	
+	</div>
+      
 
-      <div class="parallax"><img src="static/images/food.jpg"></div>
+      <div class="parallax"><img src="static/images/aboutus.jpg"></div>
     </div>
-
-  <div class="section" id="padsec">
+	
+	<div class="section" id="padsec">
     <div class="container aqw" style="padding:20px">
       <div class = "center">
-        <font color="red" size="6px">RandomFood </font>
+        <font color="grey" size="6px">ABOUT US</font>
       </div>
-      <p style="font-size:20px" class="center">It brings you the food from different cities, embedded in the culture of different states from all over the India at your doorstep.
-      </p>
+    
+	 <div class="row">
+	 <font color="grey" weight="300" >WHO WE ARE</font>
+	 <blockquote><p>We are a group of IIT Delhi students who started RandomFood to make food of every culture, every state which are limited to certain area avilable to each and every single person in India.</p></blockquote>
+	 
+	 </div>
+	 
+	  <div class="row">
+	 <font color="grey" weight="300" >WHAT WE DO</font>
+	 <blockquote><p>We collect recipes and dishes from different states which are not so common in other states and make it avilable to people there </p></blockquote>
+	 
+	 </div>
+	 
+	  <div class="row">
+	 <font color="grey" weight="300" >OUR VISION</font>
+	 <blockquote><p>We are a group of IIT Delhi students who started RandomFood to make food of every culture, every state which are limited to certain area avilable to each and every single person in India.</p></blockquote>
+	 
+	 </div>
+	 
+	 
+	 
+	 
     </div>
  
-  <div class="row" style="background-color:#D4D1C5" id="newrow">
-      <div class="col s12 l6 m6" id="nopad" >
-	       <img class="responsive-img" src ="static/images/food1.jpg" id="fullimg" >
-	  </div>
-	  <div class="col s12 l6 m6 center" style="padding:100px" >
-	    <div class="container" style="border:2px solid green">
-	  <font id ="text1"size="40px" color="red"><u>DELHI</u></font>
-	  <br/>
- <font size="5px" >Burger Muglai</font>
-	  
-	  
-	  </div>
-	  </div>
+  
+ 
+  
+    
   </div>
-  <div class="row" style="background-color:#F2BDA5"  id="newrow">
-     <div class="col s12 l6 m6 center" style="padding:100px" >
-	<div class="container" style="border:2px solid green">
-	  <font id ="text1"size="40px" color="red"><u>Kolkata</u></font>
-	  <br/>
- <font size="5px" >Cheese Makhni</font>
-	  </div>
-	  </div>
-	  <div class="col s12 l6 m6" id="nopad">
-	  <img class="responsive-img" src ="static/images/food2.jpg" id="fullimg" >
-	  </div>
-    </div>
-    <div class="row" style="background-color:#CCB69E" id="newrow">
-        <div class="col s12 l6 m6" id="nopad" >
-  	       <img class="responsive-img" src ="static/images/food1.jpg" id="fullimg" >
-  	  </div>
-  	  <div class="col s12 l6 m6 center" style="padding:70px" >
-  	     <div class="container" style="border:2px solid green">
-	  <font id ="text1"size="40px" color="red"><u>Kerela</u></font>
-	  <br/>
- <font size="5px" >Rice Halwa</font>
-	  </div>
-  	  </div>
-    </div>
-    <div class="row" style="background-color:#fff"  id="newrow">
-      <div class="col s12 l6 m6 center" style="padding:70px">
-  	     <div class="container" style="border:2px solid green">
-	  <font id ="text1"size="40px" color="red"><u>Madhya Pradesh</u></font>
-	  <br/>
- <font size="5px" >Garadu</font>
-	  </div>
-  	  </div>
-  	  <div class="col s12 l6 m6" id="nopad">
-  	  <img class="responsive-img" src ="static/images/food2.jpg" id="fullimg" >
-  	  </div>
-      </div>
-  </div>
-  <div class="parallax-container">
-    <div class="parallax"><img src="static/images/food2.png"></div>
-  </div>
-  <div class="section container">
-    <div class="row">
-     <div class="col s12 l6">
-       <div class="card-panel red">
-         <div class="white-text">
-           <p class="flow-text center" style="font-size:25px">
-            GET IN TOUCH
-           </p>
-           <p style="font-size:20px">
-             Contact
-           </p>
-           <div id="div1"></div>
-           <div style="padding:10px">
-             <i class="material-icons small">phone</i>
-           </div>
-       </div>
-       </div>
-     </div>
-     <div class="col s12 l6">
-       <div class="card-panel red darken-4">
-         <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-         I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-         </span>
-       </div>
-     </div>
-   </div>
-  </div>
+  
    </main>
    <footer class="page-footer purple darken-1 scrollspy" id="contact">
      <div class="footer-copyright">
