@@ -6,7 +6,7 @@
 .pacon {
       height: 300px;
     }
-	
+
 .about{
   height: 400px;
 }
@@ -30,6 +30,12 @@ font-size: 12px;
 
 }
 
+.btcolor:hover{
+  background-color: red;
+  transform: scale(1.1);
+  transition: all 300ms;
+}
+
 .btcolor1{
 background-color: transparent;
 border: 2px solid red;
@@ -51,7 +57,7 @@ color: #555555;
 }
 
 .btcolor1:hover {
-    background-color: red; /* Green */
+    background-color: red;
     color: white;
 	border: 2px solid white;
 	opacity:1;
@@ -185,11 +191,13 @@ padding-top:0;
 }
 
 #radcor{
-
 	border-radius: .5em
 }
 
-
+#radcor:hover{
+  transform: scale(1.05);
+  transition: all 200ms;
+}
 
 .rating {
     float:left;
@@ -251,6 +259,24 @@ body {
       right:60px;
   }
 
+  .followimg:hover{
+    transform: scale(1.5);
+    transition: all 200ms;
+  }
+  .followimg:hover p{
+    display: block;
+  }
+
+  div.followimg p{
+    display: none;
+    position: absolute;
+    bottom: -8px;
+    left: 3px;
+    color: white;
+    font-family: monospace;
+    float: left;
+  }
+
 .backimg{
     background-image: url("http://springhappenings.com/wp-content/uploads/2014/09/crsrxfllostehmuxwzqfkdarpcg0di40toehyl4mzmgrkmy3dpfzxttukvsmluvp-o.jpg");
     height: 450px;
@@ -262,8 +288,8 @@ body {
    background-image: url("../images/modal.png");
 	max-height: 90%;
   width: 90%;
-  
- 
+
+
 }
 
 
@@ -296,6 +322,19 @@ a.active{
 }
 
 .ultype li{
-	
 	list-style-type:disc;"
+}
+
+.fadedes,.fadedes2,.fadeimg,.fadeimg2{
+  opacity: 0;
+}
+
+.fadedes:hover,.fadedes2:hover,.viewb:hover,.canimation:hover,.paraanim:hover{
+  transform: scale(1.2);
+  transition: all 200ms;
+}
+
+.fadeimg:hover,.fadeimg2:hover{
+  transform: scale(1.2);
+  transition: all 200ms;
 }
