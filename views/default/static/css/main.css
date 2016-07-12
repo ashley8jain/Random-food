@@ -330,11 +330,29 @@ a.active{
 }
 
 .fadedes:hover,.fadedes2:hover,.viewb:hover,.canimation:hover,.paraanim:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari */
   transition: all 200ms;
 }
 
 .fadeimg:hover,.fadeimg2:hover{
   transform: scale(1.2);
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari */
   transition: all 200ms;
+}
+
+#cardanim{
+  position: relative;
+  right: 900px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#cardanim2{
+  position: relative;
+  left: 900px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }

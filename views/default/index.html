@@ -207,7 +207,7 @@
   <div class="section container">
     <div class="row">
      <div class="col s12 l6">
-       <div class="card-panel red canimation">
+       <div class="card-panel red canimation" id="cardanim">
          <div class="white-text">
            <p class="flow-text center" style="font-size:25px">
             GET IN TOUCH
@@ -234,7 +234,7 @@
        </div>
      </div>
      <div class="col s12 l6">
-       <div class="card-panel red darken-4 canimation">
+       <div class="card-panel red darken-4 canimation" id="cardanim2">
          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
          </span>
@@ -276,6 +276,21 @@
       },
       {selector: '.fadedes2,.fadeimg2', offset: 500, callback: function() {
         Materialize.fadeInImage(".fadedes2,.fadeimg2");
+        }
+      },
+      {selector: '.canimation',offset:500, callback: function(){
+        obj = document.getElementById('cardanim');
+        obj2 = document.getElementById('cardanim2');
+        obj.style.position='relative';
+        obj2.style.position='relative';
+
+        function shake(interval) {
+            setTimeout(function(){
+                obj.style.right = '0px';
+                obj2.style.left = '0px';
+            }, interval);
+        }
+            shake(100);
         }
       }
     ];
